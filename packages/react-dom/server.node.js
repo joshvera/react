@@ -42,3 +42,10 @@ export function renderToPipeableStream() {
     arguments,
   );
 }
+
+export function renderToReadableStream() {
+  return require('./src/server/ReactDOMFizzServerBrowser').renderToReadableStream.apply(
+    this,
+    arguments,
+  );
+}
